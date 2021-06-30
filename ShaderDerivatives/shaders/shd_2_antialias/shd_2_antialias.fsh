@@ -1,5 +1,7 @@
 //This extension adds three functions: dFdx, dFdy, fwidth
 #extension GL_OES_standard_derivatives : require
+//Will cause an error if your hardware doesn't support it!
+//Note: Some platforms have little or no support (like Apple) so you may need alternatives.
 
 //Read the emboss fragment shader first!
 
