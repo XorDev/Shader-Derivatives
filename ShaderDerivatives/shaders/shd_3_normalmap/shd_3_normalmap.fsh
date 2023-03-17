@@ -1,5 +1,6 @@
-//This extension adds three functions: dFdx, dFdy, fwidth
-#extension GL_OES_standard_derivatives : require
+//This uses the "GL_OES_standard_derivatives" extension which adds three functions: dFdx, dFdy, fwidth
+//#extension GL_OES_standard_derivatives : require
+//Update 2023: Extension is enabled by default.
 //Will cause an error if your hardware doesn't support it!
 //Note: Some platforms have little or no support (like Apple) so you may need alternatives.
 
