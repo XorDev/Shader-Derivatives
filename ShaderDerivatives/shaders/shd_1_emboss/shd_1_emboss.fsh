@@ -1,12 +1,12 @@
-//This extension adds three functions: dFdx, dFdy, fwidth
-#extension GL_OES_standard_derivatives : require
+//This uses the "GL_OES_standard_derivatives" extension which adds three functions: dFdx, dFdy, fwidth
+//#extension GL_OES_standard_derivatives : require
+//Update 2023: Extension is enabled by default.
 //Will cause an error if your hardware doesn't support it!
 //Note: Some platforms have little or no support (like Apple) so you may need alternatives.
 
 //The fragment shader doesn't run one pixel at a time. It computes in 2x2 quad sections.
 //This means the shader actually knows a little bit about some of the pixels around it.
 //With the derivatives extension, you can find the difference between two pixels.
-
 
 //Let's say you have 4 pixels (2x2), with values labeled v1-v4:
 // v1, v2
