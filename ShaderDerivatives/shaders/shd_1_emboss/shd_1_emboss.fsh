@@ -38,7 +38,7 @@ void main()
 	{
 		//Compute the x-derivative of the texture.
 		//Add 0.5 to balance between positive and negative.
-		tex.rgb = dFdx(tex.rgb)+.5;
+		tex.rgb = dFdx(length(tex.rgb))+vec3(.5);
 	}
 	else if (mode<2.)
 	{

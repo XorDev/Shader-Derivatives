@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"shd_3_normalmap","order":2,"path":"shaders/shd_3_normalmap/shd_3_normalmap.yy",},
+    {"name":"spr_rock_normal","order":1,"path":"sprites/spr_rock_normal/spr_rock_normal.yy",},
+    {"name":"fnt_body","order":1,"path":"fonts/fnt_body/fnt_body.yy",},
+    {"name":"shd_2_antialias","order":1,"path":"shaders/shd_2_antialias/shd_2_antialias.yy",},
+  ],
+}

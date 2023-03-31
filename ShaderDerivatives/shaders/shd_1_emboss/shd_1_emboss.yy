@@ -1,11 +1,10 @@
 {
-  "type": 1,
+  "resourceType": "GMShader",
+  "resourceVersion": "1.0",
+  "name": "shd_1_emboss",
   "parent": {
     "name": "Shaders",
     "path": "folders/Shaders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "shd_1_emboss",
-  "tags": [],
-  "resourceType": "GMShader",
+  "type": 1,
 }
