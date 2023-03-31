@@ -12,16 +12,17 @@ uniform vec3 pos;
 void main()
 {
 	vec4 tex = texture2D(gm_BaseTexture, v_coord);
-	vec3 normal = normalize(tex.rgb-.5);
+	vec3 normal = normalize(tex.rgb - 0.5);
 	//Compute the texture coordinates derivatives.
 	vec2 dx = dFdx(v_coord);
 	vec2 dy = dFdy(v_coord);
-	vec4 rot = vec4(dx,dy);
+	
+	vec4 rot = vec4(dx, dy);
 	//Correct normal with texture orientation.
-	normal.xy *= mat2(normalize(rot.xz),normalize(rot.yw));
+	normal.xy *= mat2(normalize(rot.xz), -normalize(rot.yw));
 	
 	//Difference from surface to light position.
-	vec3 dir = normalize(pos-gl_FragCoord.xyz);
+	vec3 dir = normalize(pos - gl_FragCoord.xyz);
 	//Compute lambertian lighting.
 	float lambert = max(dot(normal,dir),0.);
 	//Compute light color.

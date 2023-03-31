@@ -11,7 +11,7 @@ varying vec2 v_coord;
 void main()
 {
 	//Distance to center of texture coordinates.
-	float dist = .5-length(v_coord-.5);
+	float dist = 0.5 - length(v_coord - 0.5);
 	//Find the x,y change in dist
 	float dx = dFdx(dist);
 	float dy = dFdy(dist);
@@ -24,5 +24,5 @@ void main()
 	
 	//Divide the distance by texel width (to bring back to pixel range)
 	dist /= width;
-    gl_FragColor = vec4(.6,.8,1, clamp(dist,0.,1.));
+    gl_FragColor = vec4(0.6,0.8,1.0, clamp(dist,0.,1.));
 }

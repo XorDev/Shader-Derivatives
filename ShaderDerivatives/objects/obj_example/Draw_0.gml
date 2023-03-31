@@ -57,7 +57,7 @@ switch(demo%3)
 	_head = "Normal mapping shader";
 	_text = "Works with transformations";
 	shader_set(shd_3_normalmap);
-	shader_set_uniform_f(uni_pos,mouse_x,mouse_y,room_width*.1);
+	shader_set_uniform_f(uni_pos,mouse_x,mouse_y,room_width*0.1);
 	draw_sprite_ext(spr_rock_normal,0,640,360,1,1,current_time/70,-1,1);
 	shader_reset();
 	break;
